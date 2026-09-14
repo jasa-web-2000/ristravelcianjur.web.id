@@ -1,20 +1,20 @@
 <?php
 
-$domain = 'http://192.168.100.2/ristravelcianjur.web.id/';
+$domain = 'http://localhost/ristravelcianjur.web.id/';
 $domain = 'https://ristravelcianjur.web.id/';
 $brand = 'Ris Travel Cianjur';
 // $logoShared = 'src/img/harga-travel.jpg';
 $logo = 'src/img/logo.webp';
 $logoPanjang = 'src/img/logo.webp';
-$title = $brand . " - Travel Garut dan Bandung Terbaik";
-$desc = $brand . " melayani travel dari Garut dan Bandung tujuan seluruh Jabodetabek, Jawa Barat, Jawa Timur, Jogja, hingga Denpasar";
-$telp = '0857-0010-0923';
+$title = $brand . " - Travel di Cianjur dan Sukabumi";
+$desc = $brand . " melayani travel dari Cianjur dan Sukabumi tujuan seluruh Jabodetabek, Bandara Soetta, Bandung, Semarang, Surabaya, hingga Bali";
+$telp = '0858-8211-2376';
 // $telp2 = '0857-9190-4615';
-$alamat = 'Perumahan Hijra, Sukamukti, Kec. Banyuresmi, Kabupaten Garut';
+$alamat = 'Mekarsari, Kabupaten Cianjur, Jawa Barat';
 
-$iframe = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7532263117137!2d107.9442705!3d-7.1545051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b1fd2f5864e9%3A0x6b4658cc04541e00!2sSANGGA%20TRAVEL%20%26%20TRANS!5e0!3m2!1sid!2sid!4v1785343939571!5m2!1sid!2sid';
+$iframe = 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.7020244635473!2d107.1220278!3d-6.806055599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDgnMjEuOCJTIDEwN8KwMDcnMTkuMyJF!5e0!3m2!1sid!2sid!4v1789303685859!5m2!1sid!2sid';
 
-function res_telp($telp)
+function res_telp(string $telp)
 {
   $telp = str_replace('-', '', $telp);
   $telp = preg_replace('/^0/', '62', $telp, 1);
@@ -56,156 +56,111 @@ $menu = [
 $rute = [
 
   [
-    'tujuan' => 'Majalengka',
-    'rute' => [
-      ['Travel Garut Majalengka', 250000],
-      ['Travel Bandung Majalengka', 250000],
-      ['Travel Majalengka Garut', 250000],
-      ['Travel Majalengka Bandung', 250000],
-    ],
-  ],
-  [
-    'tujuan' => 'Cirebon',
-    'rute' => [
-      ['Travel Garut Cirebon', 250000],
-      ['Travel Bandung Cirebon', 250000],
-      ['Travel Cirebon Garut', 250000],
-      ['Travel Cirebon Bandung', 250000],
-    ],
-  ],
-  [
-    'tujuan' => 'Brebes',
-    'rute' => [
-      ['Travel Garut Brebes', 300000],
-      ['Travel Bandung Brebes', 250000],
-      ['Travel Brebes Garut', 300000],
-      ['Travel Brebes Bandung', 250000],
-    ],
-  ],
-  [
-    'tujuan' => 'Tegal',
-    'rute' => [
-      ['Travel Garut Tegal', 300000],
-      ['Travel Bandung Tegal', 250000],
-      ['Travel Tegal Garut', 300000],
-      ['Travel Tegal Bandung', 250000],
-    ],
-  ],
-  [
-    'tujuan' => 'Pemalang',
-    'rute' => [
-      ['Travel Garut Pemalang', 300000],
-      ['Travel Bandung Pemalang', 300000],
-      ['Travel Pemalang Garut', 300000],
-      ['Travel Pemalang Bandung', 300000],
-    ],
-  ],
-  [
-    'tujuan' => 'Pekalongan',
-    'rute' => [
-      ['Travel Garut Pekalongan', 350000],
-      ['Travel Bandung Pekalongan', 300000],
-      ['Travel Pekalongan Garut', 350000],
-      ['Travel Pekalongan Bandung', 300000],
-    ],
-  ],
-  [
-    'tujuan' => 'Batang',
-    'rute' => [
-      ['Travel Garut Batang', 350000],
-      ['Travel Bandung Batang', 350000],
-      ['Travel Batang Garut', 350000],
-      ['Travel Batang Bandung', 350000],
-    ],
-  ],
-  [
-    'tujuan' => 'Kendal',
-    'rute' => [
-      ['Travel Garut Kendal', 350000],
-      ['Travel Bandung Kendal', 350000],
-      ['Travel Kendal Garut', 350000],
-      ['Travel Kendal Bandung', 350000],
-    ],
-  ],
-  [
-    'tujuan' => 'Semarang',
-    'rute' => [
-      ['Travel Garut Semarang', 350000],
-      ['Travel Bandung Semarang', 350000],
-      ['Travel Semarang Garut', 350000],
-      ['Travel Semarang Bandung', 350000],
-    ],
-  ],
-  [
-    'tujuan' => 'Yogyakarta',
-    'rute' => [
-      ['Travel Garut Yogyakarta', 350000],
-      ['Travel Bandung Yogyakarta', 350000],
-      ['Travel Yogyakarta Garut', 350000],
-      ['Travel Yogyakarta Bandung', 350000],
-    ],
-  ],
-  [
-    'tujuan' => 'Solo',
-    'rute' => [
-      ['Travel Garut Solo', 400000],
-      ['Travel Bandung Solo', 400000],
-      ['Travel Solo Garut', 400000],
-      ['Travel Solo Bandung', 400000],
-    ],
-  ],
-  [
-    'tujuan' => 'Surabaya',
-    'rute' => [
-      ['Travel Garut Surabaya', 600000],
-      ['Travel Bandung Surabaya', 600000],
-      ['Travel Surabaya Garut', 600000],
-      ['Travel Surabaya Bandung', 600000],
-    ],
-  ],
-  [
-    'tujuan' => 'Denpasar',
-    'rute' => [
-      ['Travel Garut Denpasar', 850000],
-      ['Travel Bandung Denpasar', 750000],
-      ['Travel Denpasar Garut', 850000],
-      ['Travel Denpasar Bandung', 750000],
-    ],
-  ],
-  [
     'tujuan' => 'Jakarta',
     'rute' => [
-      ['Travel Garut Jakarta', 300000],
-      ['Travel Bandung Jakarta', 250000],
-      ['Travel Jakarta Garut', 300000],
-      ['Travel Jakarta Bandung', 250000],
+      ['Travel Cianjur Jakarta', 0],
+      ['Travel Sukabumi Jakarta', 0],
+      ['Travel Jakarta Cianjur', 0],
+      ['Travel Jakarta Sukabumi', 0],
     ],
   ],
   [
-    'tujuan' => 'Depok',
+    'tujuan' => 'Bandara Soetta',
     'rute' => [
-      ['Travel Garut Depok', 300000],
-      ['Travel Bandung Depok', 250000],
-      ['Travel Depok Garut', 300000],
-      ['Travel Depok Bandung', 250000],
+      ['Travel Cianjur Bandara Soetta', 0],
+      ['Travel Sukabumi Bandara Soetta', 0],
+      ['Travel Bandara Soetta Cianjur', 0],
+      ['Travel Bandara Soetta Sukabumi', 0],
+    ],
+  ],
+  [
+    'tujuan' => 'Bandung',
+    'rute' => [
+      ['Travel Cianjur Bandung', 0],
+      ['Travel Sukabumi Bandung', 0],
+      ['Travel Bandung Cianjur', 0],
+      ['Travel Bandung Sukabumi', 0],
     ],
   ],
   [
     'tujuan' => 'Bogor',
     'rute' => [
-      ['Travel Garut Bogor', 350000],
-      ['Travel Bandung Bogor', 300000],
-      ['Travel Bogor Garut', 350000],
-      ['Travel Bogor Bandung', 300000],
+      ['Travel Cianjur Bogor', 0],
+      ['Travel Sukabumi Bogor', 0],
+      ['Travel Bogor Cianjur', 0],
+      ['Travel Bogor Sukabumi', 0],
     ],
   ],
   [
-    'tujuan' => 'Merak',
+    'tujuan' => 'Depok',
     'rute' => [
-      ['Travel Garut Merak', 400000],
-      ['Travel Bandung Merak', 350000],
-      ['Travel Merak Garut', 400000],
-      ['Travel Merak Bandung', 350000]
+      ['Travel Cianjur Depok', 0],
+      ['Travel Sukabumi Depok', 0],
+      ['Travel Depok Cianjur', 0],
+      ['Travel Depok Sukabumi', 0],
+    ],
+  ],
+  [
+    'tujuan' => 'Tangerang',
+    'rute' => [
+      ['Travel Cianjur Tangerang', 0],
+      ['Travel Sukabumi Tangerang', 0],
+      ['Travel Tangerang Cianjur', 0],
+      ['Travel Tangerang Sukabumi', 0],
+    ],
+  ],
+  [
+    'tujuan' => 'Bekasi',
+    'rute' => [
+      ['Travel Cianjur Bekasi', 0],
+      ['Travel Sukabumi Bekasi', 0],
+      ['Travel Bekasi Cianjur', 0],
+      ['Travel Bekasi Sukabumi', 0],
+    ],
+  ],
+  [
+    'tujuan' => 'Cikarang',
+    'rute' => [
+      ['Travel Cianjur Cikarang', 0],
+      ['Travel Sukabumi Cikarang', 0],
+      ['Travel Cikarang Cianjur', 0],
+      ['Travel Cikarang Sukabumi', 0],
+    ],
+  ],
+  [
+    'tujuan' => 'Bali',
+    'rute' => [
+      ['Travel Cianjur Bali', 0],
+      ['Travel Sukabumi Bali', 0],
+      ['Travel Bali Cianjur', 0],
+      ['Travel Bali Sukabumi', 0],
+    ],
+  ],
+  [
+    'tujuan' => 'Denpasar',
+    'rute' => [
+      ['Travel Cianjur Denpasar', 0],
+      ['Travel Sukabumi Denpasar', 0],
+      ['Travel Denpasar Cianjur', 0],
+      ['Travel Denpasar Sukabumi', 0],
+    ],
+  ],
+  [
+    'tujuan' => 'Semarang',
+    'rute' => [
+      ['Travel Cianjur Semarang', 0],
+      ['Travel Sukabumi Semarang', 0],
+      ['Travel Semarang Cianjur', 0],
+      ['Travel Semarang Sukabumi', 0],
+    ],
+  ],
+  [
+    'tujuan' => 'Surabaya',
+    'rute' => [
+      ['Travel Cianjur Surabaya', 0],
+      ['Travel Sukabumi Surabaya', 0],
+      ['Travel Surabaya Cianjur', 0],
+      ['Travel Surabaya Sukabumi', 0],
     ],
   ],
 
@@ -214,12 +169,12 @@ $rute = [
 
 $kota = [
   [
-    'garut',
-    'garut.jpg',
+    'cianjur',
+    'cianjur.jpg',
   ],
   [
-    'bandung',
-    'bandung.jpg',
+    'sukabumi',
+    'sukabumi.jpg',
   ],
   [
     'jakarta',
@@ -238,21 +193,22 @@ $kota = [
     'semarang.jpg',
   ],
   [
-    'jogja',
-    'jogja.jpg',
+    'surabaya',
+    'surabaya.jpg',
   ],
   [
-    'denpasar',
-    'denpasar.jpg',
+    'bali',
+    'bali.jpg',
   ],
 ];
 
 $galeri = [
-  '1.jpg',
-  '2.jpg',
-  '3.jpg',
-  '4.jpg',
-  '5.jpg',
+  '1.jpeg',
+  '2.jpeg',
+  '3.jpeg',
+  '4.jpeg',
+  '5.jpeg',
+  '6.jpeg',
 ];
 
 // $harga = [
@@ -265,86 +221,86 @@ $galeri = [
 $keunggulan = [
   [
     '🚗',
-    'Armada Bersih, Nyaman & Siap Jalan',
-    'Setiap armada kami selalu dalam kondisi prima, rutin diservis, bersih, dan wangi. Kami memastikan perjalanan Anda aman serta nyaman sejak penjemputan hingga tiba di tujuan.'
+    'Armada Bersih, Nyaman & Terawat',
+    'Kami selalu memastikan setiap armada dalam kondisi bersih, nyaman, dan siap digunakan. Perawatan dilakukan secara rutin untuk menjaga keamanan dan kenyamanan Anda selama perjalanan.'
   ],
 
   [
     '👨‍✈️',
-    'Driver Ramah & Profesional',
-    'Pengemudi berpengalaman yang memahami rute terbaik untuk perjalanan lebih cepat dan efisien. Keselamatan serta kenyamanan penumpang selalu menjadi prioritas utama.'
+    'Driver Berpengalaman & Profesional',
+    'Perjalanan Anda didampingi oleh pengemudi yang berpengalaman, ramah, dan memahami berbagai rute perjalanan. Keselamatan dan kenyamanan penumpang menjadi prioritas kami.'
   ],
 
   [
     '🏠',
     'Layanan Antar Jemput Door to Door',
-    'Nikmati kemudahan ' . $brand . '  dijemput dan diantar langsung ke alamat tujuan tanpa perlu ke terminal. Lebih praktis, hemat waktu, dan tentunya lebih nyaman.'
+    'Nikmati kemudahan layanan ' . $brand . ' dengan sistem antar jemput langsung dari alamat Anda hingga ke tujuan. Tanpa perlu datang ke terminal, perjalanan menjadi lebih praktis, nyaman, dan menghemat waktu.'
   ],
 
   [
     '🗺️',
-    'Rute Lengkap & Strategis',
-    $desc . ' Dengan jangkauan rute yang luas, kami siap mengantar Anda antar kota.'
+    'Pilihan Rute Luas & Strategis',
+    $desc . ' Didukung dengan pilihan rute yang beragam dan strategis, kami siap membantu memenuhi kebutuhan perjalanan Anda antar kota dengan lebih mudah dan nyaman.'
   ],
 ];
 
 
 $testimonial = [
   [
-    "Saya sudah beberapa kali menggunakan layanan travel ini untuk perjalanan dari Garut ke Bandung. Armadanya bersih, kursinya nyaman, AC dingin, dan drivernya ramah. Penjemputan selalu tepat waktu sehingga perjalanan terasa aman dan nyaman. Sangat direkomendasikan bagi siapa saja yang membutuhkan travel terpercaya.",
+    "Saya sudah beberapa kali menggunakan layanan travel ini untuk perjalanan Cianjur ke Jakarta. Armada selalu bersih dan nyaman, AC terasa sejuk, serta driver juga ramah selama perjalanan. Proses penjemputannya pun berjalan sesuai jadwal, sehingga saya bisa bepergian dengan lebih tenang.",
     "Andi Pratama",
     "Pelanggan Setia"
   ],
   [
-    "Perjalanan dari Bandung ke Jogja sangat menyenangkan. Proses pemesanan melalui WhatsApp mudah, admin responsif, dan informasi keberangkatan jelas. Driver mengemudi dengan hati-hati, sementara armadanya bersih dan nyaman. Saya pasti akan menggunakan layanan ini lagi.",
+    "Perjalanan dari Cianjur ke Bali terasa nyaman dari awal hingga sampai tujuan. Pemesanan melalui WhatsApp cukup mudah, admin cepat merespons, dan informasi keberangkatan disampaikan dengan jelas. Driver juga mengemudi dengan baik sehingga perjalanan terasa lebih aman.",
     "Rina Maharani",
     "Karyawan Swasta"
   ],
   [
-    "Saya sering melakukan perjalanan bisnis ke Jawa Timur dan selalu memilih $brand. Jadwal keberangkatan tepat waktu, armada nyaman untuk perjalanan jauh, serta driver profesional dan berpengalaman. Pelayanannya konsisten sehingga layak direkomendasikan.",
+    "Saya cukup sering melakukan perjalanan bisnis ke berbagai kota di Jawa Timur dan memilih menggunakan layanan $brand. Armada yang nyaman, jadwal keberangkatan yang teratur, serta driver yang berpengalaman membuat perjalanan jarak jauh terasa lebih nyaman. Pelayanannya juga cukup konsisten setiap kali saya bepergian.",
     "Dedi Saputra",
     "Pengusaha"
   ],
   [
-    "Pengalaman saya sangat memuaskan sejak proses pemesanan hingga tiba di tujuan. Admin ramah, penjemputan sesuai jadwal, dan driver mengutamakan keselamatan selama perjalanan. Saya merasa nyaman dari awal hingga akhir.",
+    "Pengalaman menggunakan layanan ini cukup memuaskan, mulai dari proses pemesanan sampai tiba di tujuan. Admin memberikan informasi dengan baik, penjemputan berjalan sesuai jadwal, dan driver juga memperhatikan keselamatan selama perjalanan. Secara keseluruhan, saya merasa nyaman menggunakan layanan ini.",
     "Siti Aisyah",
     "Mahasiswa"
   ],
   [
-    "Saya merekomendasikan layanan ini untuk perjalanan Garut, Bandung, Jawa Barat, Jawa Timur, Jogja, hingga Denpasar. Harganya terjangkau, armadanya bersih, driver berpengalaman, dan jadwal keberangkatan selalu sesuai. Pilihan yang tepat untuk perjalanan yang aman dan nyaman.",
+    "Menurut pengalaman saya, layanan ini cocok untuk perjalanan antar kota seperti Cianjur, Garut, Jabodetabek, Bandung, Semarang, Surabaya, hingga Denpasar. Armada cukup nyaman, driver berpengalaman, dan proses keberangkatan berjalan dengan baik. Saya akan mempertimbangkan menggunakan layanan ini kembali untuk perjalanan berikutnya.",
     "Budi Hartono",
     "Pelanggan"
   ],
 ];
 
 
-
 $faq = [
   [
     "question" => "Rute apa saja yang dilayani?",
-    "answer" => "$brand melayani perjalanan dari Garut dan Bandung menuju berbagai kota di Jawa Barat, Jawa Tengah, Jawa Timur, Yogyakarta, hingga Denpasar dengan jadwal keberangkatan setiap hari."
+    "answer" => "$brand melayani perjalanan dari Cianjur dan Sukabumi menuju berbagai wilayah Jabodetabek, Bandara Soetta, Bandung, Semarang, Surabaya, hingga Bali. Ketersediaan rute dan jadwal dapat disesuaikan dengan tujuan perjalanan."
   ],
   [
     "question" => "Bagaimana cara melakukan pemesanan?",
-    "answer" => "Pemesanan dapat dilakukan melalui WhatsApp atau telepon. Cukup kirimkan nama, tanggal keberangkatan, lokasi penjemputan, tujuan, dan jumlah penumpang kepada admin."
+    "answer" => "Pemesanan dapat dilakukan dengan menghubungi admin melalui WhatsApp $telp atau telepon. Silakan informasikan nama, tanggal keberangkatan, lokasi penjemputan, tujuan perjalanan, dan jumlah penumpang agar proses reservasi dapat dilakukan dengan lebih cepat."
   ],
   [
     "question" => "Apakah tersedia layanan antar jemput?",
-    "answer" => "Ya. Kami menyediakan layanan door to door sehingga penumpang dapat dijemput dan diantar sesuai area layanan yang tersedia."
+    "answer" => "Ya, $brand menyediakan layanan antar jemput dengan sistem door to door untuk area yang termasuk dalam jangkauan layanan. Penumpang dapat dijemput dari lokasi yang telah disepakati dan diantar langsung ke tujuan."
   ],
   [
     "question" => "Armada apa yang digunakan?",
-    "answer" => "Armada selalu dalam kondisi prima, bersih, nyaman, ber-AC, dan menjalani perawatan berkala demi menjaga keamanan serta kenyamanan perjalanan."
+    "answer" => "$brand menggunakan armada yang bersih, nyaman, ber-AC, dan dirawat secara berkala. Kondisi kendaraan selalu diperhatikan agar perjalanan jarak dekat maupun jauh tetap nyaman."
   ],
   [
     "question" => "Bagaimana metode pembayarannya?",
-    "answer" => "Pembayaran dapat dilakukan melalui transfer bank maupun tunai sesuai ketentuan yang telah disepakati saat melakukan pemesanan."
+    "answer" => "Pembayaran dapat dilakukan melalui transfer bank maupun secara tunai sesuai dengan ketentuan yang berlaku. Informasi mengenai metode pembayaran akan disampaikan oleh admin saat proses pemesanan."
   ],
   [
     "question" => "Apakah tersedia jadwal keberangkatan setiap hari?",
-    "answer" => "Ya. Jadwal keberangkatan tersedia setiap hari. Hubungi admin untuk mengetahui jadwal terbaru, ketersediaan kursi, dan informasi lainnya."
+    "answer" => "Ya, $brand menyediakan jadwal keberangkatan setiap hari untuk rute tertentu. Untuk mendapatkan informasi jadwal terbaru, ketersediaan kursi, dan waktu keberangkatan sesuai tujuan, silakan hubungi admin sebelum melakukan pemesanan."
   ],
 ];
+
 
 
 
@@ -573,9 +529,9 @@ function rupiah(int $harga)
           <div class="md:!col-span-7 p-5 md:p-10 md:-top-10 lg:p-20 z-10 sm:max-w-[600px] lg:max-w-full">
             <h1
               class="max-w-[400px] mb-3 text-white text-3xl leading-[40px] md:text-[40px] md:leading-[50px] lg:text-5xl lg:leading-[70px] font-bold text-left">
-              <?= $brand ?> - Jasa Travel Garut & Bandung
+              <?= $title ?>
             </h1>
-            <p class="desc text-[17px] leading-7 !text-slate-300 !mb-5"><?= $desc; ?></p>
+            <p class="desc text-[17px] leading-7 !text-slate-300 !mb-5"><?= $desc; ?>.</p>
             <div class="flex gap-x-5 mt-7">
               <a
                 href="<?= $link_whatsapp ?>"
@@ -857,35 +813,30 @@ function rupiah(int $harga)
             <?php foreach ($rute as $item) : ?>
 
               <div class="rute">
-                <!-- <a
-                  target="_blank"
-                  title="<?= 'Rute Garut/Bandung - ' . $item['tujuan'] ?>"
-                  href="<?= $link_whatsapp ?>!"
-                  class=""></a> -->
                 <img
                   src="<?= $domain ?>src/img/rute.webp"
                   width="100%"
                   height="100%"
                   loading="lazy"
-                  alt="<?= 'Rute Garut/Bandung - ' . $item['tujuan'] ?>"
+                  alt="travel Cianjur/Sukabumi - <?= $item['tujuan'] ?>"
                   class="brightness-75" />
                 <div class="">
                   <h3 class="!line-clamp-1 block whitespace-nowrap !z-1">
-                    Rute Garut/Bandung - <?= $item['tujuan'] ?>
+                    Cianjur/Sukabumi - <?= $item['tujuan'] ?>
                   </h3>
                   <p class="text-[15px] opacity-80 my-2 !line-clamp-3">
-                    Jasa Travel dari Garut dan Bandung ke <?= $item['tujuan'] ?> atau sebaliknya:
+                    Jasa Travel dari Cianjur dan Sukabumi ke <?= $item['tujuan'] ?> atau sebaliknya:
                   </p>
                   <ul class="text-[15px] opacity-80 !list-disc ml-5">
                     <?php foreach ($item['rute'] as $r) : ?>
                       <li class="mb-1">
                         <b class="!line-clamp-1 inline-block text-pr"><?= $r[0] ?></b>
-                        <i class="harga-travel"><?= rupiah($r[1]) ?> / kursi</i>
+                        <!-- <i class="harga-travel"><?= rupiah($r[1]) ?> / kursi</i> -->
                       </li>
                     <?php endforeach; ?>
 
                   </ul>
-                  <a target="_blank" title="Booking tiket via whatsapp" href="<?= $link_whatsapp ?>" class="my-gradient hover:!bg-none hover:!bg-primary-hover text-slate-100 block text-center text-sm mt-3 rounded p-2 relative">Booking Tiket</a>
+                  <a target="_blank" title="Booking tiket travel Cianjur/Sukabumi - <?= $item['tujuan'] ?> via whatsapp" href="<?= $link_whatsapp ?>" class="my-gradient hover:!bg-none hover:!bg-primary-hover text-slate-100 block text-center text-sm mt-3 rounded p-2 relative">Booking Tiket</a>
                 </div>
               </div>
             <?php endforeach; ?>
@@ -953,20 +904,21 @@ function rupiah(int $harga)
             <div class="text inner-container">
               <h2 class="line-h2 left-12 text-slate-50 before:!bg-blue-300 after:!bg-blue-300"><?= $brand ?></h2>
               <p class="desc text-justify !text-slate-300 !mb-5">
-                <?= $brand ?> memiliki pelayanan terbaik terutama di bidang
+                <?= $brand ?> hadir dengan pelayanan terbaik, khususnya dalam menyediakan layanan
                 <a class="underline" href="https://jasatravel.web.id/" target="_blank">travel antar kota</a>.
-                Kami menyediakan layanan antar jemput langsung dari rumah atau sesuai titik penjemputan yang Anda inginkan.
+                Kami melayani perjalanan dengan sistem antar jemput langsung dari rumah maupun dari titik penjemputan sesuai dengan kebutuhan Anda.
               </p>
 
               <p class="desc text-justify !text-slate-300 !mb-5">
-                Salah satu rute favorit kami adalah
-                <a href="https://biotrans.id/rute/travel-garut-semarang/" class="underline" target="_blank">Travel Garut Semarang</a>
-                serta rute sebaliknya Semarang Garut. Setiap perjalanan selalu didukung oleh sopir profesional dan armada yang berkualitas.
+                Salah satu rute yang banyak diminati adalah
+                <a href="https://biotrans.id/rute/travel-cianjur-surabaya/" class="underline" target="_blank">Travel Cianjur Surabaya</a>,
+                termasuk perjalanan dari Surabaya menuju Cianjur. Untuk memastikan perjalanan tetap nyaman dan aman, setiap keberangkatan didukung oleh sopir berpengalaman serta armada yang berkualitas.
               </p>
 
               <p class="desc text-justify !text-slate-300 !mb-5">
-                Tidak hanya layanan <?= $brand ?> door to door, kami juga menawarkan beberapa layanan perjalanan lainnya, seperti:
+                Selain menyediakan layanan <?= $brand ?> dengan sistem door to door, kami juga menyediakan berbagai pilihan layanan perjalanan lainnya yang dapat disesuaikan dengan kebutuhan perjalanan Anda, seperti:
               </p>
+
 
               <ul class="!list-item !list-disc text-slate-300 ml-5">
                 <li>Travel Reguler</li>
@@ -1004,8 +956,7 @@ function rupiah(int $harga)
           <div class="text-center inner-container">
             <h2 class="line-h2">Galeri Mobil Travel </h2>
             <p class="desc">
-              Galeri ini menampilkan berbagai unit, foto, dan momen berharga
-              yang merefleksikan perjalanan kami.
+              Galeri ini menghadirkan berbagai koleksi foto unit, aktivitas, serta momen berkesan yang menjadi bagian dari perjalanan dan perkembangan kami.
             </p>
           </div>
           <div
