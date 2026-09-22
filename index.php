@@ -1,6 +1,6 @@
 <?php
 
-$domain = 'http://localhost/ristravelcianjur.web.id/';
+$domain = 'http://localhost/ristravelcianjur.w  eb.id/';
 $domain = 'https://ristravelcianjur.web.id/';
 $brand = 'Ris Travel Cianjur';
 // $logoShared = 'src/img/harga-travel.jpg';
@@ -25,11 +25,11 @@ $res_telp2 = isset($telp2) ? res_telp($telp2) : null;
 $link_telp = 'tel:' . $res_telp;
 $link_telp2 = isset($telp2) ? 'tel:' . $res_telp : null;
 $link_whatsapp = 'https://wa.me/' . res_telp($telp) .
-  '?text=' . urlencode('Halo admin ' . $brand);
+  '?text=' . urlencode('Halo admin ' . $domain);
 
 $link_whatsapp2 = isset($telp2)
   ? 'https://wa.me/' . res_telp($telp2) .
-  '?text=' . urlencode('Halo admin ' . $brand)
+  '?text=' . urlencode('Halo admin ' . $domain)
   : null;
 
 $menu = [
